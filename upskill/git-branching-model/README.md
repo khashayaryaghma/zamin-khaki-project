@@ -6,7 +6,6 @@
 - Feature branches
 - Release branches
 - Hotfix branches
-
 ---
 ### Reference
 
