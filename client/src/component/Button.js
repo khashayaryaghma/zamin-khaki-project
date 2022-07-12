@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import PropTypes, { array } from "prop-types";
+import PropTypes from "prop-types";
  function Buttoon({
     variant,
     color,
@@ -23,7 +23,7 @@ import PropTypes, { array } from "prop-types";
     );
 }
 
-Buttoon.prototype ={
+Buttoon.propTypes ={
     variant:PropTypes.arrayOf(["outlined", "contained","text"])
 }
 export default Buttoon;
