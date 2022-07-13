@@ -24,8 +24,18 @@ import PropTypes from "prop-types";
     );
 }
 
-Buttoon.propTypes ={
-    variant:PropTypes.arrayOf(["outlined", "contained","text"])
-}
+Buttoon.propTypes = {
+    variant: PropTypes.oneOf(["outlined", "contained", "text"]),
+    color: PropTypes.oneOf([
+        "inherit",
+        "primary",
+        "secondary",
+        "success",
+        "error",
+        "info",
+        "warning",
+    ]),
+    size: PropTypes.oneOf(["small" , "medium" , "large"]),
+};
 export default Buttoon;
 
