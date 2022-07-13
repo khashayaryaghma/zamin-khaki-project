@@ -3,17 +3,9 @@ import Select from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
 
-
-function Selectopt({
-    sx,
-    id,
-    label,
-    handleChange,
-    age
-}) {
-
-      
+function Selectopt({ sx, id, label, handleChange, name, options }) {
     return (
         <>
             <Box sx={sx}>
@@ -22,13 +14,13 @@ function Selectopt({
                     <Select
                         labelId={id}
                         id={id}
-                        value={age}
+                        value={name}
                         label={label}
                         onChange={handleChange}
                     >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {options.map((ele) => {
+                            return <MenuItem value={ele}>{ele}</MenuItem>;
+                        })}
                     </Select>
                 </FormControl>
             </Box>
@@ -36,4 +28,12 @@ function Selectopt({
     );
 }
 
+Selectopt.propTypes = {
+    sx: PropTypes.object,
+    id: PropTypes.string,
+    label: PropTypes.string,
+    name: PropTypes.string,
+    options: PropTypes.array,
+    handleChange: PropTypes.func,
+};
 export default Selectopt;

@@ -2,15 +2,19 @@ import Button from "./component/Button";
 import AutocompleteInput from "./component/AutocompleteInput";
 import Textfieldd from "./component/Textfield";
 import TextField from "@mui/material/TextField";
-import top100Films from "./constant/topFilms";
 import Selectopt from "./component/Selectopt";
 import { useState } from "react";
 
+
+
+import top100Films from "./constant/topFilms";
+import options from "./constant/options";
+
 function App() {
-const [age, setAge] = useState("");
+const [name, setName] = useState("");
 
 const handleChange = (event) => {
-    setAge(event.target.value);
+    setName(event.target.value);
 };
     return (
         <>
@@ -41,10 +45,11 @@ const handleChange = (event) => {
             />
             <Selectopt
                 handleChange={handleChange}
-                age={age}
-                label="age"
+                name={name}
+                label="name"
                 id="select"
                 sx={{ maxWidth: 160 }}
+                options={options}
             />
         </>
     );
