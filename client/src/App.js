@@ -4,10 +4,14 @@ import Textfieldd from "./component/Textfield";
 import TextField from "@mui/material/TextField";
 import top100Films from "./constant/topFilms";
 import Selectopt from "./component/Selectopt";
-
+import { useState } from "react";
 
 function App() {
+const [age, setAge] = useState("");
 
+const handleChange = (event) => {
+    setAge(event.target.value);
+};
     return (
         <>
             <Button
@@ -35,7 +39,13 @@ function App() {
                 color="secondary"
                 size="medium"
             />
-            <Selectopt />
+            <Selectopt
+                handleChange={handleChange}
+                age={age}
+                label="age"
+                id="select"
+                sx={{ maxWidth: 160 }}
+            />
         </>
     );
 }

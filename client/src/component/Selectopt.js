@@ -4,18 +4,27 @@ import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Box from "@mui/material/Box";
 
-function Selectopt() {
+
+function Selectopt({
+    sx,
+    id,
+    label,
+    handleChange,
+    age
+}) {
+
+      
     return (
         <>
-            <Box sx={{ maxWidth: 160 }}>
+            <Box sx={sx}>
                 <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                    <InputLabel id={id}>{label}</InputLabel>
                     <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        // value={age}
-                        label="Age"
-                        // onChange={handleChange}
+                        labelId={id}
+                        id={id}
+                        value={age}
+                        label={label}
+                        onChange={handleChange}
                     >
                         <MenuItem value={10}>Ten</MenuItem>
                         <MenuItem value={20}>Twenty</MenuItem>
