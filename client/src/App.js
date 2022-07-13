@@ -1,6 +1,8 @@
 import Button from "./component/Button";
-import Textfield from "./component/Textfield";
+import AutocompleteInput from "./component/AutocompleteInput";
+import TextField from '@mui/material/TextField';
 
+import top100Films from "./constant/topFilms";
 
 function App() {
 
@@ -16,16 +18,16 @@ function App() {
                 click
             </Button>
 
-            <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                component="p"
-            >
-                click
-            </Button>
-
-            <Textfield />
+            <AutocompleteInput
+                disablePortal
+                option={top100Films}
+                sx={{ width: 300 }}
+                id="combo-box"
+                renderInput={(params) => (
+                    <TextField {...params} label="Movie" />
+                )}
+            />
+            {/* <Textfield /> */}
         </>
     );
 }
