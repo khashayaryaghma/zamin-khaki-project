@@ -3,6 +3,8 @@ import AutocompleteInput from "./component/AutocompleteInput";
 import Textfieldd from "./component/Textfield";
 import TextField from "@mui/material/TextField";
 import top100Films from "./constant/topFilms";
+import Selectopt from "./component/Selectopt";
+
 
 function App() {
 
@@ -17,7 +19,6 @@ function App() {
             >
                 click
             </Button>
-
             <AutocompleteInput
                 disablePortal
                 option={top100Films}
@@ -27,10 +28,14 @@ function App() {
                     <TextField {...params} label="Movie" />
                 )}
             />
-
-            <Textfieldd id="textInput" label="username" variant="outlined" color="secondary" size="medium"/>
-
-
+            <Textfieldd
+                id="textInput"
+                label="username"
+                variant="outlined"
+                color="secondary"
+                size="medium"
+            />
+            <Selectopt />
         </>
     );
 }
