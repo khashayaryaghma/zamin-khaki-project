@@ -35,7 +35,8 @@ Buttoon.propTypes = {
         "info",
         "warning",
     ]),
-    size: PropTypes.oneOf(["small" , "medium" , "large"]),
+    size: PropTypes.oneOf(["small", "medium", "large"]),
+    onClick: PropTypes.func,
 };
 export default Buttoon;
 

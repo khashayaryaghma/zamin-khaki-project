@@ -22,6 +22,7 @@ AutocompleteInput.propTypes = {
     id: PropTypes.string,
     options: PropTypes.object,
     sx: PropTypes.object,
+    renderInput: PropTypes.func,
 };
 
 export default AutocompleteInput;
