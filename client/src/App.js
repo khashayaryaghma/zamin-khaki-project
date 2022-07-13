@@ -1,7 +1,7 @@
 import Button from "./component/Button";
 import AutocompleteInput from "./component/AutocompleteInput";
-import TextField from '@mui/material/TextField';
-
+import Textfieldd from "./component/Textfield";
+import TextField from "@mui/material/TextField";
 import top100Films from "./constant/topFilms";
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
                 click
             </Button>
 
-
             <AutocompleteInput
                 disablePortal
                 option={top100Films}
@@ -29,7 +28,9 @@ function App() {
                 )}
             />
 
+            <Textfieldd id="textInput" label="username" variant="outlined" color="secondary" size="large"/>
 
+            
         </>
     );
 }
