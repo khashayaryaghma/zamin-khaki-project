@@ -28,9 +28,9 @@ function App() {
                 )}
             />
 
-            <Textfieldd id="textInput" label="username" variant="outlined" color="secondary" size="large"/>
+            <Textfieldd id="textInput" label="username" variant="outlined" color="secondary" size="medium"/>
 
-            
+
         </>
     );
 }
