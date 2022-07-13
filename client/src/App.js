@@ -6,10 +6,8 @@ function App() {
 
     return (
         <>
-            <Textfield />
-
             <Button
-                variant={1}
+                variant="outlined"
                 color="secondary"
                 size="medium"
                 component="a"
@@ -17,7 +15,7 @@ function App() {
             >
                 click
             </Button>
-            
+
             <Button
                 variant="contained"
                 color="primary"
@@ -26,6 +24,8 @@ function App() {
             >
                 click
             </Button>
+
+            <Textfield />
         </>
     );
 }
