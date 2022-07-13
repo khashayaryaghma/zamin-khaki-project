@@ -18,5 +18,10 @@ function AutocompleteInput({
       />
   );
 }
+AutocompleteInput.propTypes = {
+    id: PropTypes.string,
+    options: PropTypes.object,
+    sx: PropTypes.object,
+};
 
 export default AutocompleteInput;
