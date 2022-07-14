@@ -12,10 +12,10 @@ const Template = (args) => <Buttoon {...args} />;
 
 export const Primary = Template.bind({});
 
-// Primary.args = {
-//     primary: true,
-//     label: "Button",
-// };
+Primary.args = {
+    primary: true,
+    label: "Button",
+};
 
 // export const Secondary = Template.bind({});
 // Secondary.args = {
