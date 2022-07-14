@@ -13,6 +13,5 @@ const Template = (args) => <Buttoon {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-    primary: true,
     label: "Button",
 };
