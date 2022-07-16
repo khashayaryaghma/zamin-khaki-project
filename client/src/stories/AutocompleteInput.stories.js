@@ -11,6 +11,7 @@ export const Template = (args) => (
     <AutocompleteInput
         renderInput={(params) => <TextField {...params} label="Movie" />}
         option={topFilms}
+        {...args}
     />
 );
 
