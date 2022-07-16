@@ -1,19 +1,18 @@
 import TextField from "@mui/material/TextField";
 import PropTypes from "prop-types";
 
-function Textfieldd({
-    id,
-    label,
-    variant,
-    color,
-    size,
-    ...rest
-}) {
+function Textfieldd({ id, label, variant, color, size, ...rest }) {
     return (
-    <>
-     <TextField id={id} label={label} variant={variant} size={size} color={color} {...rest}/>
-    </>
-        
+        <>
+            <TextField
+                id={id}
+                label={label}
+                variant={variant}
+                size={size}
+                color={color}
+                {...rest}
+            />
+        </>
     );
 }
 
