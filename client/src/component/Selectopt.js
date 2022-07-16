@@ -9,7 +9,6 @@ function Selectopt({ sx, id, label, handleChange, name, options }) {
     return (
         <>
             <Box sx={sx}>
-                <FormControl fullWidth>
                     <InputLabel id={id}>{label}</InputLabel>
                     <Select
                         labelId={id}
@@ -17,12 +16,12 @@ function Selectopt({ sx, id, label, handleChange, name, options }) {
                         value={name}
                         label={label}
                         onChange={handleChange}
+
                     >
                         {options.map((ele) => {
                             return <MenuItem value={ele}>{ele}</MenuItem>;
                         })}
                     </Select>
-                </FormControl>
             </Box>
         </>
     );
