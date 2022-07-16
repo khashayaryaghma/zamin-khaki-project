@@ -5,6 +5,6 @@ export default {
     component: Textfieldd,
 };
 
-export const Filled = () => <Textfieldd variant="filled" />;
-export const Outlined = () => <Textfieldd variant="outlined" />;
-export const Standard = () => <Textfieldd variant="standard" />;
+export const Filled = (args) => <Textfieldd variant="filled" {...args} />;
+export const Outlined = (args) => <Textfieldd variant="outlined" {...args} />;
+export const Standard = (args) => <Textfieldd variant="standard" {...args} />;

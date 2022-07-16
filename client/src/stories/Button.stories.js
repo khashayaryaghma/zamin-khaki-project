@@ -7,8 +7,8 @@ export default {
 };
 
 export const Sample = (args) => <Buttoon {...args} />;
-export const Primary = () => <Buttoon variant="outlined" />;
-export const Secondary = () => <Buttoon variant="contained" />;
+export const Primary = (args) => <Buttoon variant="outlined" {...args}/>;
+export const Secondary = (args) => <Buttoon variant="contained" {...args}/>;
 
 // const Template = (args) => <Buttoon {...args} />;
 
