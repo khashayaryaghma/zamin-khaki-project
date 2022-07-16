@@ -19,7 +19,6 @@ import PropTypes from "prop-types";
             onClick={onClick}
             {...rest}
         >
-            hi
             {children}
         </Button>
     );
