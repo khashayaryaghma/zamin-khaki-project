@@ -46,3 +46,11 @@ it("have click text-3", () => {
     const valid = screen.queryByText(/cats/i);
     expect(valid).not.toBeInTheDocument();
 });
+
+//getall
+
+it("have click text-4", () => {
+    render(<Button />);
+    const valids = screen.getAllByRole("button");
+    expect(valids.length).toBe(1);
+});
