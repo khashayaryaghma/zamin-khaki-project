@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import Button from "./component/Button";
+import Button from "../component/Button";
 
-test("valid", () => {
-    render(<Button />);
+test("valid",async () => {
+    render(<Button children="Click"/>);
     const valid = screen.getByText(/click/i);
-    expect(valid).toBeInTheDoucument();
+    expect(valid).toBeInTheDocument();
 });
