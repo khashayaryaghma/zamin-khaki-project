@@ -18,6 +18,7 @@ import PropTypes from "prop-types";
             component={component}
             onClick={onClick}
             {...rest}
+            data-testid="buttoon"
         >
             {children}
         </Button>
