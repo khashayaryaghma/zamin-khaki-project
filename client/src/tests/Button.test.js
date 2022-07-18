@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import Button from "../component/Button";
 
+//get by
+
 test("have click text", async () => {
     render(<Button children="Click"/>);
     const valid = screen.getByText(/click/i);
@@ -28,6 +30,19 @@ it("testid", async () => {
 });
 
 
-//find by
+//find by (use async await)
+
+test("have click text-2", async () => {
+    render(<Button children="Click" />);
+    const valid = await screen.findByText(/click/i);
+    expect(valid).toBeInTheDocument();
+});
 
 
+//query by
+
+it("have click text-3", () => {
+    render(<Button children="Click" />);
+    const valid = screen.queryByText(/cats/i);
+    expect(valid).not.toBeInTheDocument();
+});
