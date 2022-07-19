@@ -6,6 +6,7 @@ function AutocompleteInput({
   sx,
   id,
   renderInput,
+  title,
   ...rest
 }) {
   return (
@@ -13,7 +14,8 @@ function AutocompleteInput({
           id={id}
           options={option}
           sx={sx}
-          renderInput={renderInput}
+          renderInput={ renderInput}
+          title={title}
           {...rest}
       />
   );

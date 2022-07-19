@@ -18,7 +18,7 @@ function Selectopt({ sx, id, label, handleChange, name, options }) {
                         onChange={handleChange}
 
                     >
-                        {options.map((ele) => {
+                        {options?.map((ele) => {
                             return <MenuItem value={ele}>{ele}</MenuItem>;
                         })}
                     </Select>

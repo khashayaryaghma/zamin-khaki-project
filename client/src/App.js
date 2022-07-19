@@ -32,6 +32,7 @@ const handleChange = (event) => {
                 option={top100Films}
                 sx={{ width: 300 }}
                 id="combo-box"
+                title="autocomplete"
                 renderInput={(params) => (
                     <TextField {...params} label="Movie" />
                 )}
